@@ -22,8 +22,8 @@ Technologies used :
 
 - git clone https://github.com/Dineshreddyvengampalli/user_management_coding_challenge.git
 
-- npm run test (to run tests)
 - npm install
+- npm run test (to run tests)
 - npm run build
 - npm run dev (for development environment)
 - npm start (run from build)
