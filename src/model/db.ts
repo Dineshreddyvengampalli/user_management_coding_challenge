@@ -1,4 +1,5 @@
 import { connect } from 'mongoose';
+import { connection } from "mongoose";
 
 
 
@@ -8,3 +9,14 @@ export const dbConnection = async()=>{
 
 }
 
+connection.on('connected',()=>{
+    console.log('connected to database')
+})
+
+connection.on("error", (error) => {
+    console.error("error", error);
+});
+
+connection.on("disconnected", () => {
+    console.log("Mongodb disconnected");
+});
